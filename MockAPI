@@ -1,0 +1,26 @@
+// Simulated API call to fetch user details
+async function fetchUserDetails() {
+    const mockApiUrl = "https://mock-api.example.com/users/123"; // Replace with actual Genesys API endpoint
+    
+    try {
+        const response = await fetch(mockApiUrl, {
+            method: "GET",
+            headers: {
+                "Authorization": "Bearer YOUR_ACCESS_TOKEN", // Replace with a valid token
+                "Content-Type": "application/json"
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status} ${response.statusText}`);
+        }
+
+        const userDetails = await response.json();
+        console.log("User Details:", userDetails);
+    } catch (error) {
+        console.error("Failed to fetch user details:", error);
+    }
+}
+
+// Call the function
+fetchUserDetails();
