@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<p>Genesys Cloud WebChat test page</p>
+
+	<ul>
+		<li> <a href="index.html">Genesys Test Site Home Page</a> </li>
+	</ul>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Genesys Cloud WebChat Example</title>
+</head>
+<body>
+
+    <h1>Private Embedded Client callControls</h1>
+
+<script type="text/javascript">
+settings: {
+
+embedWebRTCByDefault: true,
+
+hideWebRTCPopUpOption: false,
+
+enableCallLogs: false,
+
+enableTransferContext: true,
+
+hideCallLogSubject: false,
+
+hideCallLogContact: false,
+
+hideCallLogRelation: false,
+
+enableTransferContext: true,
+
+dedicatedLoginWindow: false,
+
+embeddedInteractionWindow: true,
+
+enableConfigurableCallerId: false,
+
+enableServerSideLogging: true,
+
+enableCallHistory: true,
+
+defaultOutboundSMSCountryCode: "+1",
+
+searchTargets: ['people', 'queues', 'externalcontacts'],
+
+callControls: ['hold', 'mute', 'dtmf', 'flag', 'pickup', 'disconnect'],
+
+theme: {
+
+primary: "#26A9E0",
+
+text: "#000000"
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
