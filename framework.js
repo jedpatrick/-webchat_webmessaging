@@ -1,7 +1,9 @@
-config: {
-    ...
-    settings: {
-        embedWebRTCByDefault: true,
+window.Framework = {
+    config: {
+        name: "jtuliodev",
+        clientIds: {7aaad88f-d7b3-45ad-9a77-44beea1910ef},
+        settings: { 
+		embedWebRTCByDefault: true,
         hideWebRTCPopUpOption: false,
         enableCallLogs: true,
         hideCallLogSubject: false,
@@ -43,6 +45,23 @@ config: {
                ]
             }
         }
+		},
+	
+	
+        helpLinks: { 
+		InteractionList: "https://help.mypurecloud.com/articles/about-interaction-list/",
+        CallLog: "https://help.mypurecloud.com/articles/about-call-logs/",
+        Settings: "https://help.mypurecloud.com/articles/about-settings/"},
+        customInteractionAttributes: [],
+        getUserLanguage: function (callback){
+        callback("en-US");
+					}
+
     },
-    ...
+    initialSetup: function (),
+    screenPop: function (searchString, interaction),
+    processCallLog: function (callLog, interaction, eventName, onSuccess, onFailure),
+    openCallLog: function (callLog),
+    contactSearch: function (searchValue, onSuccess, onFailure)
 }
+
