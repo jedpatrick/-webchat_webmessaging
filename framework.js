@@ -1,8 +1,11 @@
 window.Framework = {
     config: {
         name: "jtuliodev",
-        clientIds: {7aaad88f-d7b3-45ad-9a77-44beea1910ef},
+        clientIds: {
+		"usw2.pure.cloud": "7aaad88f-d7b3-45ad-9a77-44beea1910ef"
+	},
         settings: { 
+		dedicatedLoginWindow: true,
 		embedWebRTCByDefault: true,
         hideWebRTCPopUpOption: false,
         enableCallLogs: true,
